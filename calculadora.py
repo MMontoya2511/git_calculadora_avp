@@ -1,4 +1,4 @@
-# calculadoraMultiplicacion.py
+#Funcion Multiplicacion Calculadora.py
 
 def multiplicacion(a, b):
     return a * b
