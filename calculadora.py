@@ -1,4 +1,4 @@
-# calculadora.py
+# calculadoraSuma.py
 
 def suma(a, b):
     return a + b
