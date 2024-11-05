@@ -1,5 +1,4 @@
-# calculadoraSuma.py
-
+##Funcion Suma Calculadora.py
 def suma(a, b):
     return a + b
 
@@ -19,4 +18,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
