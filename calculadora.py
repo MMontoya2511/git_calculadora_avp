@@ -1,19 +1,21 @@
-# calculadoraMultiplicacion.py
+#Funcion Division Calculadora.py
 
-def multiplicacion(a, b):
-    return a * b
+def division(a, b):
+    if b == 0:
+        return "Error: División por cero."
+    return a / b
 
 def main():
-    print("Calculadora de Multiplicación:")
-    print("3. Multiplicación")
+    print("Calculadora de División:")
+    print("4. División")
 
-    opcion = int(input("Elige una operación (3 para Multiplicación): "))
+    opcion = int(input("Elige una operación (4 para División): "))
 
-    # Solo permite continuar si se selecciona la opción 3
-    if opcion == 3:
+    # Solo permite continuar si se selecciona la opción 4
+    if opcion == 4:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
-        print("Resultado:", multiplicacion(a, b))
+        print("Resultado:", division(a, b))
     else:
         print("Opción no válida")
 
