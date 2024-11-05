@@ -1,4 +1,4 @@
-# calculadoraResta.py
+#Funcion Resta Calculadora.py
 
 def resta(a, b):
     return a - b
