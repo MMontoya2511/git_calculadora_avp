@@ -5,7 +5,7 @@ def resta(a, b):
 
 def main():
     print("Calculadora de Resta:")
-    print("1. Resta")
+    print("2. Resta")
 
     opcion = int(input("Elige una operación (2 para Resta): "))
 
