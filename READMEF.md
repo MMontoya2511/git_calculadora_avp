@@ -2,12 +2,19 @@ Uso de comandos
 
 #Creacion de calculadora.py
 
-git add calculadora.py git commit -m \"calculadora main\"
+git add calculadora.py
+git commit -m \
+"calculadora main\"
 
-#Creacion de rama Develop git checkout -b Develop -Agrego un archivo de
+#Creacion de rama Develop 
+git checkout -b Develop 
+-Agrego un archivo de
 txt que se muestre que se esta en la rama Develop git add develop.txt
-git commit -m \"rama DEVELOP\" -Se envia a la nube git push
-\--set-upstream origin Develop
+
+git commit -m \
+"rama DEVELOP\" \
+-Se envia a la nube 
+git push set-upstream origin Develop
 
 #Creacion rama suma-feature (sin GitFlow) git checkout -b suma-feature
 -Agrego un archivo de txt que se muestre que se esta en la rama
