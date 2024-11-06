@@ -3,8 +3,8 @@ Uso de comandos
 #Creacion de calculadora.py
 
 git add calculadora.py
-git commit -m \
-"calculadora main\"
+git commit -m 
+"calculadora main"
 
 #Creacion de rama Develop 
 git checkout -b Develop 
