@@ -2,7 +2,6 @@
 Uso de comandos
 
 #Creacion de calculadora.py
-
 git add calculadora.py
 git commit -m "calculadora main"
 
@@ -14,13 +13,12 @@ git commit -m "rama DEVELOP"
 -Se envia a la nube
 git push --set-upstream origin Develop
 
-#Creacion rama suma-feature (sin GitFlow)
+#Creacion rama suma-feature 
 git checkout -b suma-feature
 -Agrego un archivo de txt que se muestre que se esta en la rama suma-feature
 git add suma-feature.txt
 git commit -m "descrip suma-feature"
 git push --set-upstream origin suma-feature
-
 
 #Creacion rama resta-feature
 git checkout -b resta-feature
@@ -28,7 +26,6 @@ git checkout -b resta-feature
 git add resta-feature.txt
 git commit -m "descrip txt resta"
 git push --set-upstream origin resta-feature
-
 
 #Creacion rama multiplicaicon-feature
 git checkout -b multiplicacion-feature
@@ -44,9 +41,11 @@ git add division-feature.txt
 git commit -m division-txt"
 git push --set-upstream origin division-feature
 
-#Creacion de calculadora.py para cada branch
-suma-feature
 
+---------------------------------------------------------------------------------------------------------------------------
+#Creacion de calculadora.py para cada branch
+
+*suma-feature
 ##Funcion Suma Calculadora.py
 def suma(a, b):
     return a + b
@@ -55,10 +54,10 @@ def main():
     print("Calculadora de Suma:")
     print("1. Suma")
 
-    opcion = int(input("Elige una operación (1 para Suma): "))
+opcion = int(input("Elige una operación (1 para Suma): "))
 
-    # Solo permite continuar si se selecciona la opción 1
-    if opcion == 1:
+# Solo permite continuar si se selecciona la opción 1
+if opcion == 1:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado:", suma(a, b))
@@ -68,6 +67,7 @@ def main():
 if __name__ == "__main__":
     main()
 
+*resta-feature
 ##Funcion Resta Calculadora.py
 # calculadoraResta.py
 
@@ -77,11 +77,11 @@ def resta(a, b):
 def main():
     print("Calculadora de Resta:")
     print("2. Resta")
+    
+opcion = int(input("Elige una operación (2 para Resta): "))
 
-    opcion = int(input("Elige una operación (2 para Resta): "))
-
-    # Solo permite continuar si se selecciona la opción 1
-    if opcion == 2:
+# Solo permite continuar si se selecciona la opción 1
+if opcion == 2:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado:", resta(a, b))
@@ -91,6 +91,7 @@ def main():
 if __name__ == "__main__":
     main()
 
+*multiplicacion-feature
 ##Funcion Multiplicacion Calculadora.py
 def multiplicacion(a, b):
     return a * b
@@ -99,10 +100,10 @@ def main():
     print("Calculadora de Multiplicación:")
     print("3. Multiplicación")
 
-    opcion = int(input("Elige una operación (3 para Multiplicación): "))
+opcion = int(input("Elige una operación (3 para Multiplicación): "))
 
-    # Solo permite continuar si se selecciona la opción 3
-    if opcion == 3:
+# Solo permite continuar si se selecciona la opción 3
+if opcion == 3:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado:", multiplicacion(a, b))
@@ -112,6 +113,7 @@ def main():
 if __name__ == "__main__":
     main()
 
+*Division-feature
 ##Funcion Division
 def division(a, b):
     if b == 0:
@@ -122,10 +124,10 @@ def main():
     print("Calculadora de División:")
     print("4. División")
 
-    opcion = int(input("Elige una operación (4 para División): "))
+opcion = int(input("Elige una operación (4 para División): "))
 
-    # Solo permite continuar si se selecciona la opción 4
-    if opcion == 4:
+# Solo permite continuar si se selecciona la opción 4
+if opcion == 4:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado:", division(a, b))
@@ -134,6 +136,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 #Fusion en el Develop
 #1 Fusionando suma-feature
@@ -173,7 +176,6 @@ git push origin main
 
 
 
-
 1. Conflicto al querer hacer merge entre suma-feature y Develop
 C:\Users\marce\Documents\GitTou\gitfinal\git_calculadora_avp>git merge suma-feature
 error: Merging is not possible because you have unmerged files.
@@ -201,10 +203,10 @@ def main():
     print("Calculadora de Suma:")
     print("1. Suma")
 
-    opcion = int(input("Elige una operación (1 para Suma): "))
+opcion = int(input("Elige una operación (1 para Suma): "))
 
-    # Solo permite continuar si se selecciona la opción 1
-    if opcion == 1:
+# Solo permite continuar si se selecciona la opción 1
+if opcion == 1:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado:", suma(a, b))
@@ -219,9 +221,9 @@ def main():
     print("Calculadora de Suma:")
     print("1. Suma")
 
-    opcion = int(input("Elige una operación (1 para Suma): "))
+opcion = int(input("Elige una operación (1 para Suma): "))
 
-    if opcion == 1:
+if opcion == 1:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado:", suma(a, b))
@@ -254,10 +256,10 @@ def main():
     print("Calculadora de Suma:")
     print("1. Suma")
 
-    opcion = int(input("Elige una operación (1 para Suma): "))
+opcion = int(input("Elige una operación (1 para Suma): "))
 
-    # Solo permite continuar si se selecciona la opción 1
-    if opcion == 1:
+# Solo permite continuar si se selecciona la opción 1
+if opcion == 1:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado:", suma(a, b))
@@ -271,10 +273,10 @@ def main():
     print("Calculadora de Resta:")
     print("2. Resta")
 
-    opcion = int(input("Elige una operación (2 para Resta): "))
+opcion = int(input("Elige una operación (2 para Resta): "))
 
-    # Solo permite continuar si se selecciona la opción 1
-    if opcion == 2:
+# Solo permite continuar si se selecciona la opción 1
+if opcion == 2:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado:", resta(a, b))
@@ -302,9 +304,9 @@ def main():
     print("1. Suma")
     print("2. Resta")
 
-    opcion = int(input("Elige una operación (1 para Suma, 2 para Resta): "))
+opcion = int(input("Elige una operación (1 para Suma, 2 para Resta): "))
 
-    if opcion == 1:
+if opcion == 1:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado de la suma:", suma(a, b))
@@ -355,9 +357,9 @@ def main():
     print("1. Suma")
     print("2. Resta")
 
-    opcion = int(input("Elige una operación (1 para Suma, 2 para Resta): "))
+opcion = int(input("Elige una operación (1 para Suma, 2 para Resta): "))
 
-    if opcion == 1:
+if opcion == 1:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado de la suma:", suma(a, b))
@@ -366,13 +368,13 @@ def main():
         b = float(input("Ingresa el segundo número: "))
         print("Resultado de la resta:", resta(a, b))
 =======
-    print("Calculadora de Multiplicación:")
+print("Calculadora de Multiplicación:")
     print("3. Multiplicación")
 
-    opcion = int(input("Elige una operación (3 para Multiplicación): "))
+opcion = int(input("Elige una operación (3 para Multiplicación): "))
 
-    # Solo permite continuar si se selecciona la opción 3
-    if opcion == 3:
+# Solo permite continuar si se selecciona la opción 3
+if opcion == 3:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado:", multiplicacion(a, b))
@@ -401,9 +403,9 @@ def main():
     print("2. Resta")
     print("3. Multiplicación")
 
-    opcion = int(input("Elige una operación (1 para Suma, 2 para Resta, 3 para Multiplicación): "))
+opcion = int(input("Elige una operación (1 para Suma, 2 para Resta, 3 para Multiplicación): "))
 
-    if opcion == 1:
+if opcion == 1:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado de la suma:", suma(a, b))
@@ -460,9 +462,9 @@ def main():
     print("2. Resta")
     print("3. Multiplicación")
 
-    opcion = int(input("Elige una operación (1 para Suma, 2 para Resta, 3 para Multiplicación>
+opcion = int(input("Elige una operación (1 para Suma, 2 para Resta, 3 para Multiplicación>
 
-    if opcion == 1:
+if opcion == 1:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado de la suma:", suma(a, b))
@@ -475,13 +477,13 @@ def main():
         b = float(input("Ingresa el segundo número: "))
         print("Resultado de la multiplicación:", multiplicacion(a, b))
 =======
-    print("Calculadora de División:")
+print("Calculadora de División:")
     print("4. División")
 
-    opcion = int(input("Elige una operación (4 para División): "))
+opcion = int(input("Elige una operación (4 para División): "))
 
-    # Solo permite continuar si se selecciona la opción 4
-    if opcion == 4:
+# Solo permite continuar si se selecciona la opción 4
+if opcion == 4:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado:", division(a, b))
@@ -516,9 +518,9 @@ def main():
     print("3. Multiplicación")
     print("4. División")
 
-    opcion = int(input("Elige una operación (1 para Suma, 2 para Resta, 3 para Multiplicación, 4 para División): "))
+opcion = int(input("Elige una operación (1 para Suma, 2 para Resta, 3 para Multiplicación, 4 para División): "))
 
-    if opcion == 1:
+if opcion == 1:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado de la suma:", suma(a, b))
@@ -578,9 +580,9 @@ def main():
     print("3. Multiplicación")
     print("4. División")
 
-    opcion = int(input("Elige una operación (1 para Suma, 2 para Resta, 3 para Multiplicación>
+opcion = int(input("Elige una operación (1 para Suma, 2 para Resta, 3 para Multiplicación>
 
-    if opcion == 1:
+if opcion == 1:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado de la suma:", suma(a, b))
@@ -628,9 +630,9 @@ def main():
     print("3. Multiplicación")
     print("4. División")
 
-    opcion = int(input("Elige una operación (1 para Suma, 2 para Resta, 3 para Multiplicación, 4 para División): "))
+opcion = int(input("Elige una operación (1 para Suma, 2 para Resta, 3 para Multiplicación, 4 para División): "))
 
-    if opcion == 1:
+if opcion == 1:
         a = float(input("Ingresa el primer número: "))
         b = float(input("Ingresa el segundo número: "))
         print("Resultado de la suma:", suma(a, b))
